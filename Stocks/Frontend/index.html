@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <img src="file.png" alt="Fentus StockMarket Logo" class="header-logo">
+        Fentus StockMarket
+    </header>
+    
+    <div class="container">
+        <section class="search-section">
+            <select id="attribute">
+                <option value="name">Name</option>
+                <option value="last">Last Price</option>
+                <option value="high">High</option>
+                <option value="low">Low</option>
+                <option value="volume">Volume</option>
+                <option value="market_gap">Market Gap</option>
+            </select>
+            <input id="searchInput" type="text" placeholder="Enter search value">
+            <button id="searchButton">Search</button>
+            <button id="clearButton" onclick="clearSearch()">Clear</button>
+        </section>
+        <div id="alphabet-filter">
+            <button onclick="filterByLetter('A')">A</button>
+            <button onclick="filterByLetter('B')">B</button>
+            <button onclick="filterByLetter('C')">C</button>
+            <button onclick="filterByLetter('D')">D</button>
+            <button onclick="filterByLetter('E')">E</button>
+            <button onclick="filterByLetter('F')">F</button>
+            <button onclick="filterByLetter('G')">G</button>
+            <button onclick="filterByLetter('H')">H</button>
+            <button onclick="filterByLetter('I')">I</button>
+            <button onclick="filterByLetter('J')">J</button>
+            <button onclick="filterByLetter('K')">K</button>
+            <button onclick="filterByLetter('L')">L</button>
+            <button onclick="filterByLetter('M')">M</button>
+            <button onclick="filterByLetter('N')">N</button>
+            <button onclick="filterByLetter('O')">O</button>
+            <button onclick="filterByLetter('P')">P</button>
+            <button onclick="filterByLetter('Q')">Q</button>
+            <button onclick="filterByLetter('R')">R</button>
+            <button onclick="filterByLetter('S')">S</button>
+            <button onclick="filterByLetter('T')">T</button>
+            <button onclick="filterByLetter('U')">U</button>
+            <button onclick="filterByLetter('V')">V</button>
+            <button onclick="filterByLetter('W')">W</button>
+            <button onclick="filterByLetter('X')">X</button>
+            <button onclick="filterByLetter('Y')">Y</button>
+            <button onclick="filterByLetter('Z')">Z</button>
+            <button onclick="filterByLetter('*')">All</button>
+        </div>
+        <section id="results"></section>
+        <section id="recommendations" class="recommendations"></section>
+        <section id="pagination" class="pagination"></section>
+
+    </div>
+    <footer>
+        © 2024  FentusStockMarket. All rights reserved.
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>

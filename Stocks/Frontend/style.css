@@ -1,0 +1,209 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffcb22, #ffd700, #000000);
+    background-size: 300% 300%;        /* For animated gradient effect */
+    color:white;
+    padding: 20px 40px;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 20px;               /* Rounded corners */
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 10px 20px rgba(255, 203, 34, 0.4); /* Subtle yellow glow */
+    font-family: 'Press Start 2P', cursive;    
+    animation: gradientShift 6s ease infinite, pulseGlow 3s infinite;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Gradient Animation */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Pulse Glow Animation */
+@keyframes pulseGlow {
+    0% { box-shadow: 0 10px 20px rgba(255, 203, 34, 0.4); }
+    50% { box-shadow: 0 15px 30px rgba(255, 203, 34, 0.6); }
+    100% { box-shadow: 0 10px 20px rgba(255, 203, 34, 0.4); }
+}
+
+
+header:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 203, 34, 0.7); /* Enhanced glow on hover */
+    cursor: pointer;
+}
+
+.header-logo {
+    max-height: 80px;
+    margin-right: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    border: 1px solid #ffcb22;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.search-section select,
+.search-section input,
+.search-section button {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ffcb22;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.search-section button {
+    background: #ffcb22;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-section button:hover {
+    background: #ffd84d;
+    transform: scale(1.05);
+}
+
+
+#alphabet-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#alphabet-filter button {
+    padding: 10px 15px;
+    background: #ffcb22;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#alphabet-filter button:hover {
+    background: #ffd84d;
+}
+
+/* Results Section */
+#results {
+    margin-top: 20px;
+    background: black;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #555;
+    color: white;
+}
+
+table th {
+    background: #ffcb22;
+    color: black;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background: #2e2e2e;
+}
+
+table tr:hover {
+    background: #444;
+    cursor: pointer;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    background: #ffcb22;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background: #ffd84d;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e1e1e;
+    color: #ffcb22;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.recommendations {
+    background: black;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #ffcb22;
+}
+
+.recommendations h3 {
+    color: #ffcb22;
+    margin-bottom: 10px;
+}
+
+.recommendations table {
+    margin-top: 10px;
+}
