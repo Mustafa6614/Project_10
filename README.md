@@ -1,4 +1,4 @@
-# IR---Project
+# IR-Project
 # STOCKS
 # Author: Enio Peza & Mustafa Özyürek
 
